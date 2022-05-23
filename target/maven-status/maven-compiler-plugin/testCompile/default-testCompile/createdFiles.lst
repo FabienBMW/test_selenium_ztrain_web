@@ -1,0 +1,9 @@
+JunitTest.class
+com\ztrain\web\steps\LoginSteps.class
+com\ztrain\web\steps\LoginPasswordRequiredSteps.class
+com\ztrain\web\TestRunner.class
+com\ztrain\web\steps\LogOutSteps.class
+LoginTest.class
+com\ztrain\web\steps\Hooks.class
+com\ztrain\web\steps\PasswordInClearSteps.class
+com\ztrain\web\steps\ProductInformationSteps.class

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="67786" started-at="2022-05-19T13:57:30 CEST" finished-at="2022-05-19T13:58:38 CEST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="67786" started-at="2022-05-19T13:57:30 CEST" finished-at="2022-05-19T13:58:38 CEST">
+      <class name="com.ztrain.web.TestRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="setUpClass" is-config="true" duration-ms="563" started-at="2022-05-19T13:57:31 CEST" finished-at="2022-05-19T13:57:31 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@375084c9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="beforeTest" is-config="true" duration-ms="4443" started-at="2022-05-19T13:57:31 CEST" finished-at="2022-05-19T13:57:36 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="9304" started-at="2022-05-19T13:57:36 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-19T13:57:45 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Perform login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[As a Z-Train client I want to login so that I could access to online store]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="2566" started-at="2022-05-19T13:57:45 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-19T13:57:47 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Error messages on the login page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[As a customer I want to login without fill the fields so that I could see error messages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="2216" started-at="2022-05-19T13:57:47 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-19T13:57:50 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Given user is at login page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional.empty"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="1931" started-at="2022-05-19T13:57:50 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-19T13:57:52 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[As a customer I want to see my password after enter it]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="23061" started-at="2022-05-19T13:57:52 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-19T13:58:15 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[As a customer I want to click on an article so that I could see product information]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="22690" started-at="2022-05-19T13:58:15 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-19T13:58:37 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[As a customer I want to click on an article so that I could see product information]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="afterTest" is-config="true" duration-ms="896" started-at="2022-05-19T13:58:37 CEST" finished-at="2022-05-19T13:58:38 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="tearDownClass" is-config="true" duration-ms="78" started-at="2022-05-19T13:58:38 CEST" finished-at="2022-05-19T13:58:38 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.ztrain.web.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
