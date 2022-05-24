@@ -1,1 +1,0 @@
-{"uuid":"d900751a-2114-44c6-9bab-691e7f40e41a","name":"Scenario Outline: ","children":["0008f617-bec3-48c6-bcd6-c507d0655d0b"],"befores":[{"name":"com.ztrain.web.steps.Hooks.beforeTests()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1652961495121,"stop":1652961495121}],"afters":[],"start":1652961495121,"stop":1652961517797}

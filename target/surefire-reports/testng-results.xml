@@ -1,31 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="2" ignored="0" total="10" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="67786" started-at="2022-05-19T13:57:30 CEST" finished-at="2022-05-19T13:58:38 CEST">
+  <suite name="Surefire suite" duration-ms="183708" started-at="2022-05-23T18:33:33 CEST" finished-at="2022-05-23T18:36:37 CEST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="67786" started-at="2022-05-19T13:57:30 CEST" finished-at="2022-05-19T13:58:38 CEST">
+    <test name="Surefire test" duration-ms="183708" started-at="2022-05-23T18:33:33 CEST" finished-at="2022-05-23T18:36:37 CEST">
       <class name="com.ztrain.web.TestRunner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="setUpClass" is-config="true" duration-ms="563" started-at="2022-05-19T13:57:31 CEST" finished-at="2022-05-19T13:57:31 CEST">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="setUpClass" is-config="true" duration-ms="593" started-at="2022-05-23T18:33:33 CEST" finished-at="2022-05-23T18:33:34 CEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@375084c9]]>
+                <![CDATA[org.testng.TestRunner@11174bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="beforeTest" is-config="true" duration-ms="4443" started-at="2022-05-19T13:57:31 CEST" finished-at="2022-05-19T13:57:36 CEST">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="beforeTest" is-config="true" duration-ms="3024" started-at="2022-05-23T18:33:34 CEST" finished-at="2022-05-23T18:33:37 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="9304" started-at="2022-05-19T13:57:36 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-19T13:57:45 CEST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="50964" started-at="2022-05-23T18:33:37 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T18:34:28 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add product to cart and empty the cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[As a customer, I want to add products to cart so that I could empty the cart]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="2550" started-at="2022-05-23T18:34:28 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T18:34:30 CEST">
           <params>
             <param index="0">
               <value>
@@ -41,7 +57,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="2566" started-at="2022-05-19T13:57:45 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-19T13:57:47 CEST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="542" started-at="2022-05-23T18:34:30 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T18:34:31 CEST">
           <params>
             <param index="0">
               <value>
@@ -57,23 +73,131 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="2216" started-at="2022-05-19T13:57:47 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-19T13:57:50 CEST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="2169" started-at="2022-05-23T18:34:31 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T18:34:33 CEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Given user is at login page"]]>
+                <![CDATA["Logout"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional.empty"]]>
+                <![CDATA["Optional[As a customer, I want to log in the app so that I could log out]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="1931" started-at="2022-05-19T13:57:50 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-19T13:57:52 CEST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="22421" started-at="2022-05-23T18:34:33 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T18:34:55 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Product information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[As a customer, I want to add products to cart, so that I could make payment]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="23175" started-at="2022-05-23T18:34:55 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T18:35:18 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Product information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[As a customer, I want to add products to cart, so that I could make payment]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="24824" started-at="2022-05-23T18:35:18 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T18:35:43 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add product to cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[As a customer, I want to add products to cart, so that I could make payment]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<votre panier à été mis à jour> but was:<Votre panier à été mis à jour>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<votre panier à été mis à jour> but was:<Votre panier à été mis à jour>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+at com.ztrain.web.steps.AddProductToCartSteps.thenWeObserveAPopPopWhichIndicatesTheFollowingMessageMessage(AddProductToCartSteps.java:36)
+at ✽.then we observe a pop pop which indicates the following message votre panier à été mis à jour(file:///C:/Users/TED/Documents/pawk/formation/selenium%20ISTQB/framework/demo_test/src/test/resources/features/order.feature:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="24509" started-at="2022-05-23T18:35:43 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T18:36:08 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Order pop up"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[As a customer, I want to add products to cart, so that I could make payment]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="27503" started-at="2022-05-23T18:36:08 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T18:36:35 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Payment validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[As a customer, I want to add products to cart, so that I could make payment]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertFalse(Assert.java:78)
+at org.testng.Assert.assertFalse(Assert.java:88)
+at com.ztrain.web.steps.PaymentValidationSteps.aValidationConfirmationMessageShouldAppearOnTheScreen(PaymentValidationSteps.java:32)
+at ✽.A validation confirmation message should appear on the screen(file:///C:/Users/TED/Documents/pawk/formation/selenium%20ISTQB/framework/demo_test/src/test/resources/features/order.feature:55)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="712" started-at="2022-05-23T18:36:35 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T18:36:36 CEST">
           <params>
             <param index="0">
               <value>
@@ -89,43 +213,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="23061" started-at="2022-05-19T13:57:52 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-19T13:58:15 CEST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[""]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[As a customer I want to click on an article so that I could see product information]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="runScenario" duration-ms="22690" started-at="2022-05-19T13:58:15 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-19T13:58:37 CEST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[""]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[As a customer I want to click on an article so that I could see product information]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="afterTest" is-config="true" duration-ms="896" started-at="2022-05-19T13:58:37 CEST" finished-at="2022-05-19T13:58:38 CEST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="afterTest" is-config="true" duration-ms="636" started-at="2022-05-23T18:36:36 CEST" finished-at="2022-05-23T18:36:37 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="tearDownClass" is-config="true" duration-ms="78" started-at="2022-05-19T13:58:38 CEST" finished-at="2022-05-19T13:58:38 CEST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.ztrain.web.TestRunner@57f23557]" name="tearDownClass" is-config="true" duration-ms="57" started-at="2022-05-23T18:36:37 CEST" finished-at="2022-05-23T18:36:37 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

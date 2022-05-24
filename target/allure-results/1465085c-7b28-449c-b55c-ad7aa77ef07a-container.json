@@ -1,1 +1,0 @@
-{"uuid":"1465085c-7b28-449c-b55c-ad7aa77ef07a","name":"Scenario: ","children":["adb78877-4be7-41a3-8a8d-69b229400f7c"],"befores":[{"name":"com.ztrain.web.steps.Hooks.beforeTests()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1652961470131,"stop":1652961470132}],"afters":[],"start":1652961470131,"stop":1652961472032}

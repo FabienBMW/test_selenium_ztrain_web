@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 19 13:57:30 CEST 2022</td>
+<td>Started on:</td><td>Mon May 23 18:33:33 CEST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>67 seconds (67786 ms)</td>
+<tr><td>Total time:</td><td>183 seconds (183708 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,44 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Payment validation", "Optional[As a customer, I want to add products to cart, so that I could make payment]"</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at com.ztrain.web.steps.PaymentValidationSteps.aValidationConfirmationMessageShouldAppearOnTheScreen(PaymentValidationSteps.java:32)
+	at ?.A validation confirmation message should appear on the screen(file:///C:/Users/TED/Documents/pawk/formation/selenium%20ISTQB/framework/demo_test/src/test/resources/features/order.feature:55)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1653997783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1653997783'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertFalse(Assert.java:78)
+	at org.testng.Assert.assertFalse(Assert.java:88)
+	at com.ztrain.web.steps.PaymentValidationSteps.aValidationConfirmationMessageShouldAppearOnTheScreen(PaymentValidationSteps.java:32)
+	at ?.A validation confirmation message should appear on the screen(file:///C:/Users/TED/Documents/pawk/formation/selenium%20ISTQB/framework/demo_test/src/test/resources/features/order.feature:55)
+</pre></div></td>
+<td>27</td>
+<td>com.ztrain.web.TestRunner@57f23557</td></tr>
+<tr>
+<td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add product to cart", "Optional[As a customer, I want to add products to cart, so that I could make payment]"</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;votre panier à été mis à jour&gt; but was:&lt;Votre panier à été mis à jour&gt;
+	at com.ztrain.web.steps.AddProductToCartSteps.thenWeObserveAPopPopWhichIndicatesTheFollowingMessageMessage(AddProductToCartSteps.java:36)
+	at ?.then we observe a pop pop which indicates the following message votre panier à été mis à jour(file:///C:/Users/TED/Documents/pawk/formation/selenium%20ISTQB/framework/demo_test/src/test/resources/features/order.feature:23)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace118105337", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace118105337'><pre>java.lang.AssertionError: expected:&lt;votre panier à été mis à jour&gt; but was:&lt;Votre panier à été mis à jour&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+	at com.ztrain.web.steps.AddProductToCartSteps.thenWeObserveAPopPopWhichIndicatesTheFollowingMessageMessage(AddProductToCartSteps.java:36)
+	at ?.then we observe a pop pop which indicates the following message votre panier à été mis à jour(file:///C:/Users/TED/Documents/pawk/formation/selenium%20ISTQB/framework/demo_test/src/test/resources/features/order.feature:23)
+</pre></div></td>
+<td>24</td>
+<td>com.ztrain.web.TestRunner@57f23557</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,32 +113,42 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Optional[As a customer I want to click on an article so that I could see product information]"</td>
+<td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Optional[As a customer I want to see my password after enter it]"</td>
+<td></td>
+<td>0</td>
+<td>com.ztrain.web.TestRunner@57f23557</td></tr>
+<tr>
+<td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Product information", "Optional[As a customer, I want to add products to cart, so that I could make payment]"</td>
 <td></td>
 <td>23</td>
 <td>com.ztrain.web.TestRunner@57f23557</td></tr>
 <tr>
-<td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Optional[As a customer I want to click on an article so that I could see product information]"</td>
+<td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add product to cart and empty the cart", "Optional[As a customer, I want to add products to cart so that I could empty the cart]"</td>
 <td></td>
-<td>22</td>
+<td>50</td>
 <td>com.ztrain.web.TestRunner@57f23557</td></tr>
 <tr>
 <td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Error messages on the login page", "Optional[As a customer I want to login without fill the fields so that I could see error messages]"</td>
 <td></td>
-<td>2</td>
+<td>0</td>
 <td>com.ztrain.web.TestRunner@57f23557</td></tr>
 <tr>
-<td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Optional[As a customer I want to see my password after enter it]"</td>
+<td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Order pop up", "Optional[As a customer, I want to add products to cart, so that I could make payment]"</td>
 <td></td>
-<td>1</td>
+<td>24</td>
+<td>com.ztrain.web.TestRunner@57f23557</td></tr>
+<tr>
+<td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Product information", "Optional[As a customer, I want to add products to cart, so that I could make payment]"</td>
+<td></td>
+<td>22</td>
 <td>com.ztrain.web.TestRunner@57f23557</td></tr>
 <tr>
 <td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Perform login with valid credentials", "Optional[As a Z-Train client I want to login so that I could access to online store]"</td>
 <td></td>
-<td>9</td>
+<td>2</td>
 <td>com.ztrain.web.TestRunner@57f23557</td></tr>
 <tr>
-<td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Given user is at login page", "Optional.empty"</td>
+<td title='com.ztrain.web.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.ztrain.web.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Logout", "Optional[As a customer, I want to log in the app so that I could log out]"</td>
 <td></td>
 <td>2</td>
 <td>com.ztrain.web.TestRunner@57f23557</td></tr>

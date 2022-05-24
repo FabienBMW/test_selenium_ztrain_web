@@ -1,0 +1,1 @@
+{"uuid":"beba7847-99c6-471c-bfa1-864d8bb96424","name":"Scenario Outline: Logout","children":["2b564043-af6f-482c-bd4b-6bdd448e6eeb"],"befores":[{"name":"com.ztrain.web.steps.Hooks.beforeTests()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1653323671119,"stop":1653323671119}],"afters":[],"start":1653323671119,"stop":1653323673274}
