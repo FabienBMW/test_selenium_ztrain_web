@@ -31,8 +31,8 @@ public class AddProductToCartSteps {
         homePage.addToCart();
     }
 
-    @Then("^then we observe a pop pop which indicates the following message (.*)$")
-    public void thenWeObserveAPopPopWhichIndicatesTheFollowingMessageMessage(String message) {
+    @Then("^he observes a pop pop which indicates the following message (.*)$")
+    public void weObserveAPopPopWhichIndicatesTheFollowingMessageMessage(String message) {
         assertEquals(message, homePage.addedToCartMessage());
     }
 }

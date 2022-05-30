@@ -7,8 +7,8 @@ Feature: En tant que utilisateur connecté sur la page d’accueil,En ajoutant u
     Then he should be redirected to the home page
     When The user sees the prices <old_price> and <new_price> of a product <product> on promotion
     And he clicks on add to cart
-    And then we observe a pop pop which indicates the following message <message>
-    When he clicks on cart icon
+    And he observes a pop pop which indicates the following message <message>
+    And he clicks on cart icon
     Then The user must see the amount of <product> in the basket equal to the price of the promotion <new_price>
 
     Examples:

@@ -24,6 +24,7 @@ public class AjoutProduitPromotionSteps {
     @Then("^The user must see the amount of (.*) in the basket equal to the price of the promotion (.*)$")
     public void theUserMustSeeTheAmountOfTheBasketEqualToThePriceOfThePromotionCart_amount(String product, String newPrice) {
         System.out.println("return " + homePage.selectProductInCart(product));
+        homePage.moveToCartIcon();
         assertTrue(homePage.selectProductInCart(product).contains(newPrice));
     }
 }

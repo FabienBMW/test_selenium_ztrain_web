@@ -22,13 +22,11 @@ public class PaymentValidationSteps {
 
     @And("User sends the form")
     public void userSendsTheForm() {
-        System.out.println("hello");
         homePage.submitPaymentForm();
     }
 
     @Then("A validation confirmation message should appear on the screen")
     public void aValidationConfirmationMessageShouldAppearOnTheScreen() {
-        System.out.println(homePage.paymentMessage());
         assertFalse(homePage.paymentMessage().contains("Internal server error"));
     }
 }

@@ -6,7 +6,7 @@
       <class name="com.ztrain.web.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
           <include name="tearDownClass"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>

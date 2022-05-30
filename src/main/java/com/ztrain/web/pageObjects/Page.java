@@ -108,9 +108,9 @@ public class Page {
         element.click();
     }
 
-    public void moveToElement(WebElement element) {
+    protected void moveToElement(WebElement element) {
         if(longUntil(visibilityOf(element))){
-            System.out.println("Element not visible after click");
+            System.out.println("Element not visible to move");
         }
         actions.moveToElement(element).perform();
     }

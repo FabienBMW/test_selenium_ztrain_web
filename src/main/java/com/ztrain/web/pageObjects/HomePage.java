@@ -76,7 +76,10 @@ public class HomePage extends Page {
 
     public void moveToAccountIcon() {
         moveToElement(accountIcon);
-        System.out.println(accountIcon.getText());
+    }
+
+    public void moveToCartIcon() {
+        moveToElement(cartIcon);
     }
 
     public void logOut() {
@@ -99,6 +102,7 @@ public class HomePage extends Page {
 
     public String selectProductInCart(String product) {
         waitUntil(visibilityOfAllElements(cartProducts));
+        System.out.println(cartProducts.size());
         for (WebElement element: cartProducts) {
             longUntil(visibilityOf(element));
             String t = element.getText().substring(0,15);
@@ -134,6 +138,7 @@ public class HomePage extends Page {
     }
 
     public void openCart() {
+        moveToCartIcon();
         clickOn(cartIcon);
     }
 
