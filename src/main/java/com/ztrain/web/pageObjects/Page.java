@@ -52,6 +52,7 @@ public class Page {
             wait.until(isTrue);
             return true;
         }catch (Exception e){
+            LOG.info("Element not found");
             return false;
         }
     }
@@ -136,6 +137,11 @@ public class Page {
         for (int i = 0; i < key.length(); i++) {
             webElement.sendKeys(key.substring(i, i + 1));
         }
+    }
+
+    public String getText(WebElement elt) {
+        waitUntil(visibilityOf(elt));
+        return elt.getText();
     }
 
 }

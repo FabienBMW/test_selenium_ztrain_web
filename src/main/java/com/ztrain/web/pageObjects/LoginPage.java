@@ -1,14 +1,7 @@
 package com.ztrain.web.pageObjects;
 
-import com.ztrain.web.config.EnvPropertiesReader;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class LoginPage extends Page {
     @FindBy(id = "email_login")
@@ -20,8 +13,10 @@ public class LoginPage extends Page {
     @FindBy(css = "#style_container_input_password___0rEz > div > svg")
     private WebElement eyeButton;
 
-    @FindBy(css = "#style_content_form__yXJox > p")
+    @FindBy(css = "#style_content_form__yXJox > p:nth-child(2)")
     private WebElement emailErrorMessage;
+    @FindBy(css = "#style_content_form__yXJox > p:nth-child(5)")
+    private WebElement passwordErrorMessage;
 
     public void goToLoginPage() {
         driver.get(ENV.getEnvUrl("/auth/login"));
@@ -32,6 +27,10 @@ public class LoginPage extends Page {
         sendKeysSlowly(passwordInput, password);
     }
 
+    public void fillEmailField(String email) {
+        sendKeysSlowly(userNameInput, email);
+    }
+
     public void clickOnEyeButton() {
         clickOn(eyeButton);
     }
@@ -40,7 +39,11 @@ public class LoginPage extends Page {
         clickOn(this.submitButton);
     }
 
-    public boolean checkLoginErrorMessage() {
-        return waitUntil(visibilityOf(emailErrorMessage));
+    public String emailErrorMessage() {
+        return getText(emailErrorMessage);
+    }
+
+    public String passwordErrorMessage() {
+        return getText(passwordErrorMessage);
     }
 }

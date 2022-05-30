@@ -1,20 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 184.341 s <<< FAILURE! - in TestSuite
-com.ztrain.web.TestRunner.runScenario["Add product to cart", "Optional[As a customer, I want to add products to cart, so that I could make payment]"](7)  Time elapsed: 24.827 s  <<< FAILURE!
-java.lang.AssertionError: expected:<votre panier à été mis à jour> but was:<Votre panier à été mis à jour>
-	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
-	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
-	at com.ztrain.web.steps.AddProductToCartSteps.thenWeObserveAPopPopWhichIndicatesTheFollowingMessageMessage(AddProductToCartSteps.java:36)
-	at ✽.then we observe a pop pop which indicates the following message votre panier à été mis à jour(file:///C:/Users/TED/Documents/pawk/formation/selenium%20ISTQB/framework/demo_test/src/test/resources/features/order.feature:23)
-
-com.ztrain.web.TestRunner.runScenario["Payment validation", "Optional[As a customer, I want to add products to cart, so that I could make payment]"](9)  Time elapsed: 27.503 s  <<< FAILURE!
-java.lang.AssertionError: expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertFalse(Assert.java:78)
-	at org.testng.Assert.assertFalse(Assert.java:88)
-	at com.ztrain.web.steps.PaymentValidationSteps.aValidationConfirmationMessageShouldAppearOnTheScreen(PaymentValidationSteps.java:32)
-	at ✽.A validation confirmation message should appear on the screen(file:///C:/Users/TED/Documents/pawk/formation/selenium%20ISTQB/framework/demo_test/src/test/resources/features/order.feature:55)
-
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.96 s - in TestSuite

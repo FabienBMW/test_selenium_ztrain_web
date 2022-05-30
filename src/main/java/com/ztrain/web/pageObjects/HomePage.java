@@ -1,5 +1,6 @@
 package com.ztrain.web.pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -19,8 +20,15 @@ public class HomePage extends Page {
     private WebElement logoutButton;
     @FindBy(className = "style_card__gNEqX")
     private List<WebElement> products;
+    @FindBy(className = "style_card_body__EhpLW")
+    private List<WebElement> cartProducts;
     @FindBy(id = "style_price__QNXBx")
     private WebElement productPrice;
+
+    @FindBy(id = "style_initial_price__Z4QbL")
+    private WebElement oldPrice;
+    @FindBy(css = "#style_price__QNXBx > span")
+    private WebElement newPrice;
     @FindBy(css = "#style_quantity_wrapper__2QMug > button:nth-child(3)")
     private WebElement plusIcon;
     @FindBy(id = "style_btn_add_cart__gTXM7")
@@ -50,6 +58,11 @@ public class HomePage extends Page {
     private WebElement sendPaymentFormButton;
     @FindBy(css = "#style_form_wrapper__0GdNn > p")
     private WebElement paymentValidationMessage;
+
+    @FindBy(css = "#style_form_wrapper__0GdNn > p:nth-child(4)")
+    private WebElement addressErrorMessage;
+    @FindBy(css = "#style_form_wrapper__0GdNn > p:nth-child(2)")
+    private WebElement cardErrorMessage;
 
     public String getTitle() {
         return this.driver.getTitle();
@@ -84,8 +97,28 @@ public class HomePage extends Page {
         }
     }
 
+    public String selectProductInCart(String product) {
+        waitUntil(visibilityOfAllElements(cartProducts));
+        for (WebElement element: cartProducts) {
+            longUntil(visibilityOf(element));
+            String t = element.getText().substring(0,15);
+            if (product.contains(t)) {
+                return element.getText();
+            }
+        }
+        return "";
+    }
+
     public boolean getProductPrice(String price) {
         return productPrice.getText().contains(price);
+    }
+
+    public String getNewPrice() {
+        return getText(newPrice);
+    }
+
+    public String getOldPrice() {
+        return getText(oldPrice);
     }
 
     public void increaseProductQuantity() {
@@ -97,8 +130,7 @@ public class HomePage extends Page {
     }
 
     public String addedToCartMessage() {
-        waitUntil(visibilityOf(addToCartMessage));
-        return addToCartMessage.getText();
+        return getText(addToCartMessage);
     }
 
     public void openCart() {
@@ -138,5 +170,15 @@ public class HomePage extends Page {
         shortUntil(visibilityOf(paymentValidationMessage));
         saveScreenShotPNG();
         return paymentValidationMessage.getText();
+    }
+
+    public String addressErrorMessage() {
+        waitUntil(visibilityOf(addressErrorMessage));
+        return this.addressErrorMessage.getText();
+    }
+
+    public String cardErrorMessage() {
+        waitUntil(visibilityOf(cardErrorMessage));
+        return this.cardErrorMessage.getText();
     }
 }

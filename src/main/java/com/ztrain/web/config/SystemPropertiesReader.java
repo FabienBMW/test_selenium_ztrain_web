@@ -15,6 +15,6 @@ public enum SystemPropertiesReader {
     SystemPropertiesReader() {
         browser = System.getProperty("browser", "chrome");
         headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
-        env = EnvPropertiesReader.valueOf(System.getProperty("env","production").toUpperCase());
+        env = EnvPropertiesReader.valueOf(System.getProperty("env","development").toUpperCase());
     }
 }

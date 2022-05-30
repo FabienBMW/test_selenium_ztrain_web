@@ -1,11 +1,11 @@
 com\ztrain\web\pageObjects\HomePage.class
-com\ztrain\web\config\SystemPropertiesReader.class
 com\ztrain\web\pageObjects\Page.class
 com\ztrain\web\pageObjects\LoginPage.class
+com\ztrain\web\driver\LocalDriver.class
+com\ztrain\web\driver\DriverFactory.class
+com\ztrain\web\config\SystemPropertiesReader.class
 com\ztrain\web\driver\WebDriverManager.class
 com\ztrain\web\pageObjects\About.class
-com\ztrain\web\driver\LocalDriver.class
 com\ztrain\web\config\EnvPropertiesReader.class
 com\ztrain\web\config\FilePropertiesReader.class
 com\ztrain\web\driver\Driver.class
-com\ztrain\web\driver\DriverFactory.class

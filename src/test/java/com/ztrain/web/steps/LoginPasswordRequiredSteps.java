@@ -4,7 +4,7 @@ import com.ztrain.web.pageObjects.LoginPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import static org.testng.AssertJUnit.assertTrue;
+import static org.testng.AssertJUnit.assertEquals;
 
 public class LoginPasswordRequiredSteps {
 
@@ -19,8 +19,11 @@ public class LoginPasswordRequiredSteps {
         loginPage.clickOnConnexionButton();
     }
 
-    @Then("User should see an error message below the login and password fields")
-    public void userShouldSeeAnErrorMessageBelowTheLoginAndPasswordFields() {
-        assertTrue("No error message displayed", loginPage.checkLoginErrorMessage());
+    @Then("^User should see an error message below the login and password fields (.*) (.*)$")
+    public void userShouldSeeAnErrorMessageBelowTheLoginAndPasswordFields(String emailMessage, String passwordMessage) {
+        System.out.println(loginPage.emailErrorMessage());
+        System.out.println(emailMessage);
+        assertEquals(emailMessage, loginPage.emailErrorMessage());
+        //assertEquals(passwordMessage, loginPage.passwordErrorMessage());
     }
 }

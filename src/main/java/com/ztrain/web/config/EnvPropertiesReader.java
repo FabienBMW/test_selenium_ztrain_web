@@ -2,13 +2,12 @@ package com.ztrain.web.config;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Locale;
 import java.util.Properties;
 
 public enum EnvPropertiesReader {
 
     PRODUCTION,
-    INTEGRATION;
+    DEVELOPMENT;
 
     private final static String CONFIG_ENV = "config/env.properties";
     private String envUrl;

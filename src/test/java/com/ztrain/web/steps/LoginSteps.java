@@ -27,16 +27,8 @@ public class LoginSteps {
         loginPage.clickOnConnexionButton();
     }
 
-    //        @Then("^he should(|n't) be redirected to the home page$")
     @Then("^he should be redirected to the home page$")
     public void heShouldBeAtTheHomePage() {
-            /*if (negation.isEmpty()) {
-                assertTrue(homePage.isZtrainLogoDisplayed());
-                return;
-            }
-            Assert.assertNotEquals(homePage.getTitle(), "Intranet Zenity");*/
-
         assertTrue(homePage.isZtrainLogoDisplayed(), "This is not the passage");
-        //homePage.saveScreenShotPNG();
     }
 }
