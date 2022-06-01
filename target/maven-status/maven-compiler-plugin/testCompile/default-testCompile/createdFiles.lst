@@ -1,7 +1,0 @@
-JunitTest.class
-com\ztrain\web\steps\LoginSteps.class
-com\ztrain\web\TestRunner.class
-com\ztrain\web\steps\LogOutSteps.class
-com\ztrain\web\steps\HomeSteps.class
-LoginTest.class
-com\ztrain\web\steps\Hooks.class
