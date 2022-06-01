@@ -1,4 +1,4 @@
-@logout.OF-840
+@logout_OF-840
 Feature: As a customer, I want to log in the app so that I could log out
 
   Scenario Outline: Logout

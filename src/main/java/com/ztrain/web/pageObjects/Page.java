@@ -140,8 +140,9 @@ public class Page {
     }
 
     public String getText(WebElement elt) {
-        waitUntil(visibilityOf(elt));
-        return elt.getText();
+        if (waitUntil(visibilityOf(elt)))
+            return elt.getText();
+        return "Element was not found";
     }
 
 }

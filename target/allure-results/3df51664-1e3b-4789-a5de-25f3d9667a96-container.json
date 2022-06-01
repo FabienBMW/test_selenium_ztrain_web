@@ -1,1 +1,0 @@
-{"uuid":"3df51664-1e3b-4789-a5de-25f3d9667a96","name":"Scenario Outline: Email format","children":["9ec8ba11-df65-4d87-aede-6a1b78c84789"],"befores":[{"name":"com.ztrain.web.steps.Hooks.beforeTests()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1653906035109,"stop":1653906035109}],"afters":[],"start":1653906035109,"stop":1653906035975}

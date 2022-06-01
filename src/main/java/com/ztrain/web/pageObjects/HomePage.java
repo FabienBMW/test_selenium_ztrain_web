@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
@@ -69,9 +70,9 @@ public class HomePage extends Page {
     }
 
     public boolean isZtrainLogoDisplayed() {
-        super.wait.until(ExpectedConditions.urlContains("home"));
-        super.wait.until(visibilityOf(this.ztrainLogo));
-        return this.ztrainLogo.isDisplayed();
+        if (waitUntil(ExpectedConditions.urlContains("home")) && waitUntil(visibilityOf(this.ztrainLogo)))
+            return this.ztrainLogo.isDisplayed();
+        return false;
     }
 
     public void moveToAccountIcon() {
@@ -83,38 +84,36 @@ public class HomePage extends Page {
     }
 
     public void logOut() {
-        waitUntil(visibilityOf(logoutButton));
-        //System.out.println(logoutButton.getText());
-        logoutButton.click();
+        if (waitUntil(visibilityOf(logoutButton)))
+            logoutButton.click();
     }
 
     public void selectArticle(String article) {
-        longUntil(ExpectedConditions.urlContains("home"));
-        waitForLoadingPage();
-        longUntil(ExpectedConditions.visibilityOfAllElements());
-        for (WebElement element: products) {
-            if (element.getText().contains(article)){
-                clickOn(element);
-                break;
+        if (longUntil(ExpectedConditions.urlContains("home"))) {
+            waitForLoadingPage();
+            if (longUntil(ExpectedConditions.visibilityOfAllElements(products))) {
+                clickOn(products.stream()
+                        .filter(product -> product.getText().contains(article))
+                        .collect(Collectors.toList())
+                        .get(0)
+                );
             }
         }
     }
 
     public String selectProductInCart(String product) {
-        waitUntil(visibilityOfAllElements(cartProducts));
-        System.out.println(cartProducts.size());
-        for (WebElement element: cartProducts) {
-            longUntil(visibilityOf(element));
-            String t = element.getText().substring(0,15);
-            if (product.contains(t)) {
-                return element.getText();
-            }
+        if (waitUntil(visibilityOfAllElements(cartProducts))) {
+            return cartProducts.stream()
+                    .filter(webElement -> product.contains(webElement.getText().substring(0,15)))
+                    .collect(Collectors.toList())
+                    .get(0).getText();
         }
-        return "";
+        return "The product was not founded";
     }
 
     public boolean getProductPrice(String price) {
-        return productPrice.getText().contains(price);
+
+        return getText(productPrice).contains(price);
     }
 
     public String getNewPrice() {
@@ -138,7 +137,6 @@ public class HomePage extends Page {
     }
 
     public void openCart() {
-        moveToCartIcon();
         clickOn(cartIcon);
     }
 
@@ -155,8 +153,11 @@ public class HomePage extends Page {
     }
 
     public String cartValue() {
-        waitUntil(visibilityOf(addToCartMessage));
-        waitUntil(invisibilityOf(addToCartMessage));
+        if (waitUntil(visibilityOf(addToCartMessage))) {
+            if (waitUntil(textToBePresentInElement(cartValue, "0"))) {
+                return "0";
+            }
+        }
         return cartValue.getText();
     }
 
@@ -172,18 +173,22 @@ public class HomePage extends Page {
     }
 
     public String paymentMessage() {
-        shortUntil(visibilityOf(paymentValidationMessage));
-        saveScreenShotPNG();
-        return paymentValidationMessage.getText();
+        if (shortUntil(visibilityOf(paymentValidationMessage))) {
+            saveScreenShotPNG();
+            return paymentValidationMessage.getText();
+        }
+        return "Payment validation message not visible";
     }
 
     public String addressErrorMessage() {
-        waitUntil(visibilityOf(addressErrorMessage));
-        return this.addressErrorMessage.getText();
+        if (waitUntil(visibilityOf(addressErrorMessage)))
+            return addressErrorMessage.getText();
+        return "No address error message";
     }
 
     public String cardErrorMessage() {
-        waitUntil(visibilityOf(cardErrorMessage));
-        return this.cardErrorMessage.getText();
+        if (waitUntil(visibilityOf(cardErrorMessage)))
+            return cardErrorMessage.getText();
+        return "No card error message";
     }
 }

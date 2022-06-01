@@ -1,5 +1,5 @@
 @OF-1015
-Feature: As a customer, I want to add products to cart, so that I could make payment
+Feature: As a customer, I want to access the shop, so that I could see products informations
 
   Scenario Outline: Product information
     Given user is at login page

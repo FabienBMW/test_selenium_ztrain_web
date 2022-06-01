@@ -1,1 +1,0 @@
-{"uuid":"5fda7fb9-c0ae-4b9f-91f6-5663092724e7","name":"Scenario Outline: Order pop up","children":["1455262d-179f-467d-b54b-22b328c4cc11"],"befores":[{"name":"com.ztrain.web.steps.Hooks.beforeTests()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1653906113095,"stop":1653906113095}],"afters":[],"start":1653906113095,"stop":1653906136782}
